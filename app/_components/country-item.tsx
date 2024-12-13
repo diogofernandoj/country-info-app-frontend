@@ -9,7 +9,7 @@ interface CountryItemProps {
 const CountryItem = ({ country }: CountryItemProps) => {
   return (
     <Link href={`/countries/${country.countryCode}`}>
-      <div className="bg-white p-4 rounded-md flex flex-col gap-2">
+      <div className="bg-white p-4 rounded-md flex flex-col gap-2 w-max">
         <Image
           src={`http://purecatamphetamine.github.io/country-flag-icons/3x2/${country.countryCode}.svg`}
           alt={country.name}
